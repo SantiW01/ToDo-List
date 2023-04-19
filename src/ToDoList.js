@@ -38,10 +38,13 @@ const ToDoProject = {
 
 function CreateToDoStructure(container, title, description, priority) {
   const h1 = document.createElement("h1");
+  h1.setAttribute("class", "ToDo_title");
   h1.textContent = `${title}`;
   const pDescription = document.createElement("p");
+  pDescription.setAttribute("class", "ToDo_description");
   pDescription.textContent = `${description}`;
   const pPriority = document.createElement("p");
+  pPriority.setAttribute("class", "ToDO_priority");
   pPriority.textContent = `${priority}`;
   container.appendChild(h1);
   container.appendChild(pDescription);
