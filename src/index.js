@@ -32,6 +32,7 @@ function ShowForm(container) {
 }
 
 function CreateInputs(container) {
+  const div = document.createElement("div");
   const InputName = document.createElement("input");
   const inputDescription = document.createElement("input");
   const lowInput = document.createElement("input");
@@ -51,12 +52,13 @@ function CreateInputs(container) {
   highInput.value = "High";
   lowLabel.innerText = "Low";
   highLabel.innerText = "High";
-  container.appendChild(InputName);
-  container.appendChild(inputDescription);
-  container.appendChild(lowInput);
-  container.appendChild(lowLabel);
-  container.appendChild(highInput);
-  container.appendChild(highLabel);
+  div.appendChild(InputName);
+  div.appendChild(inputDescription);
+  div.appendChild(lowInput);
+  div.appendChild(lowLabel);
+  div.appendChild(highInput);
+  div.appendChild(highLabel);
+  container.appendChild(div);
 }
 
 function OptionSelected() {
